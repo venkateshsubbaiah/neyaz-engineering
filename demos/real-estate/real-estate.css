@@ -253,3 +253,15 @@ footer .footer-logo img {
         height: 300px !important;
     }
 }
+
+* Neyaz logo custom size */
+.navbar-brand img.default-logo,
+.navbar-brand img.alt-logo {
+    max-height: 90px;
+    width: auto;
+}
+
+.navbar-brand img.mobile-logo {
+    max-height: 65px;
+    width: auto;
+}
