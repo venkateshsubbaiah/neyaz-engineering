@@ -8,8 +8,8 @@
 :root {
     --alt-font: 'Urbanist', sans-serif;
     --primary-font: 'Atkinson Hyperlegible', sans-serif;
-    --base-color: #2f15f1; 
-    --dark-gray:#293526;
+    --base-color: #80101c; 
+    --dark-gray:#2F2F2F; 
 }
 body{
     font-size: 17px;
@@ -101,7 +101,7 @@ header .btn.btn-small {
     background-color: #ffa800;
 }
 .bg-base-color-transparent {
-    background-color: rgba(6, 175, 71,.15);
+    background-color: #d6cfcf;
 }
 .bg-base-color-light {
     background-color: #edf9f2;
