@@ -372,3 +372,23 @@ footer .footer-logo img {
       border-radius: 10px;
       margin: auto;
   }
+
+ /* Hero image overlay for better text contrast */
+.cover-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* adjust for strength */
+  z-index: 1;
+}
+
+/* Ensure content stays above overlay */
+.cover-background > * {
+  position: relative;
+  z-index: 2;
+}

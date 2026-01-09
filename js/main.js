@@ -2006,7 +2006,7 @@
      ====================================== */
     if (typeof $.fn.magnificPopup === 'function') {
         if ($('#subscribe-popup').length > 0) {
-            let delaySecond = 1.5,
+            let delaySecond = 0.5,
                     expireDays = 30,
                     cookieName = 'crafto-promo-popup';
             if (getCookie(cookieName) != 'shown') {
@@ -2026,7 +2026,7 @@
                             }
                         }
                     });
-                }, (delaySecond * 3500));
+                }, (delaySecond * 500));
             }
         }
     }
