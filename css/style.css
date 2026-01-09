@@ -181,8 +181,7 @@ video {
   margin-left: 0;
 }
 .row.g-0 > * {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 4px;
 }
 .row.gutter-very-small {
   margin-left: -5px;
@@ -5493,7 +5492,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   margin-bottom: 7% !important;
 }
 .mb-8 {
-  margin-bottom: 8% !important;
+  
 }
 .mb-9 {
   margin-bottom: 9% !important;
