@@ -215,7 +215,7 @@ footer ul li {
     margin-bottom: 0;
 }
 footer .footer-logo img {
-    max-height: 39px;
+    max-height: 69px;
 }
 .footer-light a:hover {
     color: var(--dark-gray);
@@ -278,3 +278,97 @@ footer .footer-logo img {
   height: 40px;
   object-fit: contain;
 }
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20b954;
+}
+.wa-float {
+    position: fixed;
+    right: 22px;
+    bottom: 72px;
+    width: 64px;
+    height: 64px;
+    z-index: 9999;
+  }
+
+  .wa-float a.wa-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #25D366; /* WhatsApp green */
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    text-decoration: none;
+    transition: transform .15s ease;
+  }
+
+  .wa-float a.wa-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+  }
+   /* Curved label holder (sits above the button) */
+  .wa-arc {
+    position: absolute;
+    left: 50%;
+    top: -18px;               /* controls gap above the button */
+    width: 103px;             /* overall width of the arc */
+    height: 90px;             /* overall height of the arc */
+    transform: translateX(-50%);
+    pointer-events: none;     /* let clicks go to the button */
+  }
+
+  /* Optional gentle pulse to draw attention */
+  .wa-pulse::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+    animation: waPulse 2s infinite;
+  }
+  @keyframes waPulse {
+    0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+    70%  { box-shadow: 0 0 0 24px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+
+  /* Dark backgrounds: add a text halo for readability */
+  .wa-arc text {
+    font: 700 15px/1 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    paint-order: stroke;
+    stroke: rgba(0,0,0,.45);  /* subtle outline */
+    stroke-width: 3px;
+  }
+  .tmng{
+    border: 1px solid #628038;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: auto;
+  }
