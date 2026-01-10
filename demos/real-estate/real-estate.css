@@ -383,7 +383,7 @@ footer .footer-logo img {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(188, 183, 183, 0.45); /* adjust for strength */
+  background: rgba(122, 118, 118, 0.45); /* adjust for strength */
   z-index: 1;
 }
 
