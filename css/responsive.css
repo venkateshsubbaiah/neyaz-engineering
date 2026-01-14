@@ -21710,3 +21710,35 @@
     padding-right: 0.8rem;
   }
 }
+
+/* ===============================
+   FINAL MOBILE FIX FOR HERO SLIDER
+   =============================== */
+@media (max-width: 768px) {
+
+    /* 1. Stop full-screen behavior */
+    .swiper.full-screen {
+        height: auto !important;
+        min-height: unset !important;
+    }
+
+    /* 2. Let slides end naturally */
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide {
+        height: auto !important;
+        min-height: unset !important;
+    }
+
+    /* 3. Show full image without cropping */
+    .swiper-slide.cover-background {
+        
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+    }
+
+    /* 4. Control spacing so no empty white gap */
+    .swiper-slide {
+        padding: 110px 0 !important;
+    }
+}
